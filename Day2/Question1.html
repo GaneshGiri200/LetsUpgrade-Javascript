@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8" />
+		<!--<meta name="viewport" content="width=device-width, initial-scal=1.0"/>-->
+		<title>Question 1</title>
+	</head>
+	<body>
+		<h3>Question 1 : Write a program to search for a perticular character in a string</h3>
+
+		<script type="text/javascript">
+			let string = "javascript classes completed"
+			let count = 0;
+			document.write("we have a sting <b>"+string+"</b> we will find <b>s</b> character in this string<br>");
+			for(let i = 0; i < string.length; i++)
+			{
+				if (string[i] == 's')
+				{
+					count++;
+					position = i;
+					if (count == 1)
+					{
+						document.write("<br>we found <b>s</b> "+count+" time at position "+i);
+					}
+					if(count > 1)
+					{
+						document.write("<br>we found <b>s</b> "+count+" times at position "+i);
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

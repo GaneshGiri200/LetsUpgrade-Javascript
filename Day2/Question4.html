@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question 4</title>
+    </head>
+    <body>
+        <h2>Question 4 :write a program to display only elements containing 'a' in them from a array </h2>
+
+        <script type="text/javascript">
+            let array = ["Iron Man","Thor","Ant Man","Captain America","Hulk", "alan walkar"];
+            document.write("<b>"+array+"</b> <br>we will find element of array which contain <b>'a'</b> in array");
+
+            for (let i = 0; i < array.length; i++)
+            {
+                let finder = 0;
+                for (let j = 0; j < array[i].length; j++)
+                {
+                    if(array[i][j] == 'a'&& finder == 0)
+                    {
+                        document.write("<br><br>we found element <b>"+array[i]+" </b> at position "+i+" which contain character 'a'");
+                        finder++;
+                    }
+                }
+                finder = 0;
+            }
+        </script>
+
+    </body>
+</html>
