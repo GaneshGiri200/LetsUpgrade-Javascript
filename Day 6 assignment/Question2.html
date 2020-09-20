@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="Question2.css">
+</head>
+
+<body>
+    <h1>Bus Managment System!</h1>
+
+    <div class='tablebg'>
+        <h1>buses</h1>
+        <div class="ins-data">
+          
+             <form onsubmit="insert(event)">
+            <input required type="text" placeholder="Name" id="ins-name" />
+            <input required type="text" placeholder="Source" id="ins-source" />
+            <input required type="text" placeholder="Destination" id="ins-dest" />
+            <input required type="number" placeholder=" bus Number" id="ins-number"/>
+            <input required type="number" placeholder="passenger capacity" id="ins-passcap" />
+            <button class="ins_btn" required >Add Bus</button>
+            </form>
+
+        </div>
+
+        <div class="searchele">
+            <input type="text" placeholder="search here!" onkeyup="search()" id="searching">
+        </div>
+        <table border="1" class='tble' cellspacing=0>
+            <thead>
+                <tr>
+                    <th >Slno</th>
+                    <th>Name</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Bus number</th>
+                    <th>Passenger capacity</th>
+                    <th>operation</th>
+                </tr>
+            </thead>
+            <tbody id="tablerows">
+             
+            </tbody>
+        </table>
+    </div>
+    <script src="Question2.js"></script>
+</body>
+
+</html>
